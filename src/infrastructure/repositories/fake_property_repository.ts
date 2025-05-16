@@ -17,7 +17,7 @@ export class FakePropertyRepository implements PropertyRepository {
         return property;
     }
 
-    // public async save(user: User): Promise<void> {
-    //     this.users.push(user);
-    // }
+    public async save(property: Property): Promise<void> {
+        this.properties.push(property);
+    }
 }
