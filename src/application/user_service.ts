@@ -7,4 +7,8 @@ export class UserService {
     public async findById(id: string): Promise<User | null> {
         return this.userRepository.findById(id);
     }
+
+    public async save(user: User): Promise<void> {
+        await this.userRepository.save(user);
+    }
 }
